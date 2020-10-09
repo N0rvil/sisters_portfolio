@@ -1,0 +1,47 @@
+.nav {
+    background-color: $color-secondary;
+    grid-row: 1 / 2;
+    grid-column: left-space-start / right-space-end;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: $font-secondary;
+    
+    
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-rows: 5rem;
+        grid-template-columns:1fr repeat(3, max-content) 1fr;
+        grid-gap: 10rem;
+        align-items: center;
+
+    }
+
+    &__link-1 {
+        grid-column: 2 / 3;
+    }
+
+    &__link-2 {
+        grid-column: 3 / 4;
+    }
+
+    &__link-3 {
+        grid-column: 4 / 5;
+    }
+    
+
+
+    &__link:link, &__link:visited {
+        text-decoration: none;
+        color: $color-primary;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        transition: all .2s;
+    }
+
+    &__link:hover {
+        color: $color-primary-dark-1;
+    }
+}

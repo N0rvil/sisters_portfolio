@@ -1,0 +1,117 @@
+.gallery {
+    &__card {
+        display: grid;
+        grid-template-rows: 5rem 1fr 5rem;
+        color: $color-black;
+        position: relative;
+        width: 32rem;
+        height: 40rem;
+        justify-self: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 1rem 4rem 0 rgba($color-black, .4);
+        border-radius: 1rem;
+        font-family: $font-primary, $font-secondary;
+        
+        
+
+        &-1 {
+            background-image: linear-gradient(to right bottom,rgba($color-blue, 0.5),rgba($color-blue-light, 0.4)),
+     url("../img/card-1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom,rgba($color-red, 0.7),rgba($color-red-light, 0.4)),
+     url("../img/card-2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom,rgba($color-violet, 0.7),rgba($color-violet-light, 0.4)),
+     url("../img/card-3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &-link {
+           // opacity: 0;
+           // visibility: hidden; 
+           text-decoration: none;
+           align-self: center;
+           justify-self: center;
+           opacity: 0;
+           visibility: hidden;
+            
+        }
+
+        &:hover {
+            .gallery__card-header {
+                transition: all .4s;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-2rem);
+            }
+            .gallery__card-info {
+                transition: all .4s;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(2rem);
+            }
+
+            .gallery__card-link {
+                transition: .3s all .4s;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+
+        &-header {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        &-info {
+            height: 12rem;
+            width: 100%;
+            background-color: rgba($color-secondary-dark-2, 0.7);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        &-location {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            
+
+            &--icon{
+                height: 4rem;
+                width: 4rem;
+            }
+
+        }
+
+        &-num {
+            margin: 1rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+
+            &--icon {
+                height: 4rem;
+                width: 4rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}

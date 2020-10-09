@@ -1,0 +1,70 @@
+.composition {
+    grid-row: 2 / 3;
+    grid-column: full-start / full-center;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+
+    
+
+    &__box {
+        width: 70rem;
+        height: 55rem;
+
+        margin-top: 5rem;
+        margin-left: 5rem;
+
+        position: absolute;
+
+    }
+
+    
+
+    &__logo {
+        width: 20rem;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+    }
+
+    &__photo {
+        position: absolute;
+
+        outline-offset: 1rem;
+        box-shadow: 1rem .5rem .5rem 0 rgba($color-black, .3);
+        transition: all .2s;
+
+
+        &--1 {
+            left: 10%;
+            top: 0;
+            
+            height: 20rem;
+        }
+    
+        &--2 {
+            left: 0;
+            top: 30%;
+
+            height: 20rem;
+        }
+    
+        &--3 {
+            left: 35%;
+            top: 20%;
+
+            height: 35rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            outline: 1.5rem solid $color-secondary;
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+        }
+
+    }
+
+}

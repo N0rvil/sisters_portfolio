@@ -1,0 +1,16 @@
+.album {
+    width: auto;
+    text-align: center;
+    padding-top: 10rem;
+
+    &__photo {
+        height: 20rem;
+        margin: 1rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    &__photo:hover {
+        transition: all .4s;
+        transform: scale(1.1);
+    }
+}

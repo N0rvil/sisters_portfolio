@@ -1,0 +1,37 @@
+.gallery {
+    margin-top: 4rem;
+    grid-row: 4 / 5;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-column-gap: 6rem;
+    grid-row-gap: 6rem;
+
+    background-color: $color-secondary;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+
+    &__header {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        align-items: center; //vertical centering
+        display: flex;
+        align-content: center; //
+        padding-left: 8rem;
+        margin-top: 5rem;
+    }
+
+    &__link {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        align-self: center;
+        margin-left: 2rem;
+    }
+
+}
+
+#gallery {
+    grid-row: 3 / 4;
+    grid-column: full-start / full-end;
+}

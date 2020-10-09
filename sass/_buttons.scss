@@ -1,0 +1,69 @@
+.btn-primary {
+    height: 5rem;
+        width: 25rem;
+        background-color: $color-secondary;
+        color: $color-primary;
+        border: none;
+        border-radius: 1rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $font-primary, $font-secondary;
+        outline: none;
+        cursor: pointer;
+        transition: all .2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.btn-secondary {
+    height: 5rem;
+        width: 25rem;
+        background-color: $color-primary;
+        color: $color-secondary;
+        border: none;
+        border-radius: 1rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $font-primary, $font-secondary;
+        outline: none;
+        cursor: pointer;
+        transition: all .2s;
+}
+
+.btn-card {
+    height: 5rem;
+        width: 18rem;
+        border: none;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        font-family:$font-secondary, $font-tertiary;
+        outline: none;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &--blue {
+            color: $color-primary;
+            background-color: $color-blue-light;
+        }
+
+        &--red {
+            color: $color-primary;
+            background-color: $color-red-light;
+        }
+
+        &--violet {
+            color: $color-primary;
+            background-color: $color-violet-light;
+        }
+
+}
+
+.btn-secondary:hover {
+    transform: scale(1.1);
+}

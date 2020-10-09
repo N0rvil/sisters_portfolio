@@ -1,0 +1,50 @@
+.about {
+    grid-row: 2 / 3;
+    grid-column: full-center-start / full-end;
+    display: grid;
+    grid-template-rows: 10rem repeat(3, max-content) 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    color: $color-black;
+
+    &__photo {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        width: 15rem;
+        height: 15rem;
+        background-color: $color-black;
+        border-radius: 50%;
+        box-shadow: 0 .5rem .5rem .2rem rgba($color-black, .3);
+    }
+
+    &__header {
+        grid-row: 2 / 3;
+        grid-column: 3 / 5;
+
+        align-self: center;
+    }
+
+    &__text {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+
+        font-size: 1.6rem;
+        font-family: $font-secondary;
+    }
+
+    &__link {
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+        height: 5rem;
+        width: 25rem;
+        border-radius: 1rem;
+        box-shadow: 0 .5rem .5rem .2rem rgba($color-black, .3);
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+    <nav class="nav">
+        <ul class="nav__list">
+            <a href="#about" class="nav__link-1 nav__link"><li class="nav__item">O mně</li></a>
+            <a href="#gallery" class="nav__link-2 nav__link"><li class="nav__item">Galerie</li></a>
+            <a href="#footer" class="nav__link-3 nav__link"><li class="nav__item">Kontaktuj mě</li></a>
+        </ul>
+    </nav>
+
+    <div class="composition">
+        <img src="img/logo.png" alt="logo" class="composition__logo">
+
+        <div class="composition__box">
+            <img src="img/composition-1.jpg" alt="" class="composition__photo composition__photo--1">
+            <img src="img/composition-2.jpg" alt="" class="composition__photo composition__photo--2">
+            <img src="img/composition-3.jpg" alt="" class="composition__photo composition__photo--3">
+        </div>
+    </div>
+
+
+    <div class="about" id="about">
+        <img src="img/beata.jpg" alt="moje foto" class="about__photo">
+        <h1 class="about__header header-1--black">O mně</h1> 
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Accusantium fugit aliquid, praesentium sunt
+              fugiat, nemo qui laborum quia, sit nisi ipsam facere sed!sit nisi ipsam facere sed! sit nisi ipsam facere sed! sit nisi ipsam facere sed! 
+              sit nisi ipsam facere sed! sit nisi ipsam facere sed! sit nisi ipsam facere sed! 
+              sit nisi ipsam facere sed! sit nisi ipsam facere sed! sit nisi ipsam facere sed!  
+              Corrupti et
+             voluptas amet porro exercitationem repellendus!</p>
+        <a href="https://www.facebook.com/beata.dudova.54" class="about__link"><button class="about__btn btn-primary">Facebook</button></a>
+    </div>
+
+    <div id="gallery"></div>
+
+    <div class="gallery">
+        <h1 class="header-1--white gallery__header">Galerie</h1> 
+
+
+        <div class="gallery__card-1 gallery__card">
+            <h2 class="header-2 gallery__card-header">Řecko</h2>
+            <a href="album-1.html" class="gallery__card-link"><button class="btn-card btn-card--blue">Prohlédnout</button></a>
+            <div class="gallery__card-info">
+                <div class="gallery__card-location">
+                    <svg class="gallery__card-location--icon">
+                        <use xlink:href="img/sprite.svg#icon-location"></use>
+                    </svg>
+                    <h3 class="header-3 gallery__card-location--text">Corfu Řecko<h3></h3>
+                </div>
+
+                <div class="gallery__card-num">
+                    <h3 class="header-3 gallery__card-num--text">39</h3>
+                    <svg class="gallery__card-num--icon">
+                        <use xlink:href="img/sprite.svg#icon-images"></use>
+                    </svg>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="gallery__card-2 gallery__card">
+            <h2 class="header-2 gallery__card-header">Lidé</h2>
+            <a href="album-2.html" class="gallery__card-link"><button class="btn-card btn-card--red">Prohlédnout</button></a>
+            <div class="gallery__card-info">
+                <div class="gallery__card-location">
+                    <svg class="gallery__card-location--icon">
+                        <use xlink:href="img/sprite.svg#icon-location"></use>
+                    </svg>
+                    <h3 class="header-3 gallery__card-location--text">Nové Město na Moravě<h3></h3>
+                </div>
+
+                <div class="gallery__card-num">
+                    <h3 class="header-3 gallery__card-num--text">18</h3>
+                    <svg class="gallery__card-num--icon">
+                        <use xlink:href="img/sprite.svg#icon-images"></use>
+                    </svg>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="gallery__card-3 gallery__card">
+            <h2 class="header-2 gallery__card-header">Různé</h2>
+            <a href="album-3.html" class="gallery__card-link"><button class="btn-card btn-card--violet">Prohlédnout</button></a>
+            <div class="gallery__card-info">
+                <div class="gallery__card-location">
+                    <svg class="gallery__card-location--icon">
+                        <use xlink:href="img/sprite.svg#icon-location"></use>
+                    </svg>
+                    <h3 class="header-3 gallery__card-location--text">Všude<h3></h3>
+                </div>
+
+                <div class="gallery__card-num">
+                    <h3 class="header-3 gallery__card-num--text">15</h3>
+                    <svg class="gallery__card-num--icon">
+                        <use xlink:href="img/sprite.svg#icon-images"></use>
+                    </svg>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!--<a href="#" class="gallery__link"><button class="btn-secondary gallery__btn">Instagram</button></a>-->
+     </div>
+
+     
+     <div class="footer" id="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link-1 footer__link">E-mail</a></li>
+            <li class="footer__item"><a href="https://www.facebook.com/beata.dudova.54" class="footer__link-2 footer__link">Facebook</a></li>
+            <li class="footer__item"><a href="https://www.instagram.com/beatadudova/?hl=en" class="footer__link-3 footer__link">Instagram</a></li>
+        </ul>
+        <p class="footer__text">Copyright &#169; 2020 by Filip Duda</p>
+        <p class="footer__text">No part of this page no be reproduce or used in any manner without written prmission of the copyright owner.</p>
+     </div>
+</body>
+</html>
+
