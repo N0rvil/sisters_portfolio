@@ -56,7 +56,8 @@
     }
 
     &__link:hover {
-        color: $color-primary-dark-1;    
+        color: $color-primary-dark-1;   
+        text-decoration: underline; 
     }
 
     &__item:hover {

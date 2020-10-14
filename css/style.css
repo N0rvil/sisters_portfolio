@@ -22,14 +22,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: minmax(min-content, 5rem) 90vh 2vh max-content 10rem;
+  grid-template-rows: minmax(min-content, 5rem) 80vh 2vh max-content 10rem;
   grid-template-columns: [left-space-start] 1fr [left-space-end full-start] 45vw [full-center full-center-start] 45vw [full-end right-space-start] 1fr [right-space-end]; }
   @media only screen and (max-width: 56.25em) {
     .container {
-      grid-template-rows: minmax(min-content, 5rem) 60vh 90vh 5vh max-content min-content; } }
+      grid-template-rows: minmax(min-content, 5rem) 60vh 80vh 5vh max-content min-content; } }
   @media only screen and (max-width: 31.25em) {
     .container {
-      grid-template-rows: minmax(min-content, 5rem) 60vh 55vh 5vh max-content min-content; } }
+      grid-template-rows: minmax(min-content, 5rem) 55vh 50vh 5vh max-content min-content; } }
 
 .nav {
   background-color: #D6AF8C;
@@ -50,7 +50,8 @@ body {
     justify-items: center; }
     @media only screen and (max-width: 56.25em) {
       .nav__list {
-        text-align: center; } }
+        text-align: center;
+        display: none; } }
   .nav__link-1 {
     grid-column: 2 / 3; }
   .nav__link-2 {
@@ -66,7 +67,8 @@ body {
     transition: all .2s;
     z-index: 10; }
   .nav__link:hover {
-    color: #D3D3D3; }
+    color: #D3D3D3;
+    text-decoration: underline; }
   @media only screen and (max-width: 56.25em) {
     .nav__item:hover {
       background-color: #BD9571; } }
@@ -81,6 +83,9 @@ body {
     margin-top: 3rem;
     left: 50%;
     transform: translate(-50%, -150%); }
+    @media only screen and (max-width: 56.25em) {
+      .nav-btn {
+        display: inline; } }
     .nav-btn::before, .nav-btn::after {
       background-color: #fff;
       height: 3px;
@@ -91,14 +96,6 @@ body {
       transform: translateY(-0.8rem); }
     .nav-btn::after {
       transform: translateY(0.3rem); }
-
-@media only screen and (max-width: 56.25em) {
-  #nav-list {
-    display: none; } }
-
-@media only screen and (max-width: 56.25em) {
-  #hamburger {
-    display: inline; } }
 
 .header-1--black {
   font-size: 6rem;
