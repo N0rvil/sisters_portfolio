@@ -8,7 +8,11 @@
     font-family: $font-secondary;
     height: 5rem;
 
-    
+    &__list-album {
+        text-align: center;
+        position: relative;
+        top: 25%;
+    }
     
     
     &__list {
@@ -19,6 +23,8 @@
         grid-gap: 10rem;
         align-items: center;
         justify-items: center;
+
+        
 
         
 
