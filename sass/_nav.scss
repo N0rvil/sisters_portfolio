@@ -24,6 +24,7 @@
 
         @media only screen and (max-width: $bp-medium) {
             text-align: center;
+            display: none;
         }
 
     }
@@ -80,6 +81,10 @@
         left: 50%;
         transform: translate(-50%, -150%);
 
+        @media only screen and (max-width: $bp-medium) {
+            display: inline;
+        }
+
         
     
         &::before, &::after {
@@ -96,16 +101,3 @@
         }
     }
 
-#nav-list {
-
-
-    @media only screen and (max-width: $bp-medium) {
-        display: none;
-    }
-}
-
-#hamburger {
-    @media only screen and (max-width: $bp-medium) {
-        display: inline;
-    }
-}
