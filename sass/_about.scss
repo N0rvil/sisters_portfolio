@@ -7,6 +7,14 @@
     grid-gap: 3rem;
     color: $color-black;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+        grid-template-rows: 2rem repeat(3, max-content);
+        margin-top: 2rem;
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    
+
+    
     &__photo {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
@@ -16,6 +24,8 @@
         background-color: $color-black;
         border-radius: 50%;
         box-shadow: 0 .5rem .5rem .2rem rgba($color-black, .3);
+
+        
     }
 
     &__header {
@@ -31,6 +41,15 @@
 
         font-size: 1.6rem;
         font-family: $font-secondary;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-column: 2 / -1;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+        }
+        
     }
 
     &__link {
@@ -41,10 +60,26 @@
         border-radius: 1rem;
         box-shadow: 0 .5rem .5rem .2rem rgba($color-black, .3);
         transition: all .2s;
+
+        
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 35rem;
+            background-color: $color-secondary;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 25rem;
+            background-color: $color-secondary;
+        }
+
+        
+
+        
+        
         &:hover {
             transform: scale(1.05);
         }
     }
 
 }
-

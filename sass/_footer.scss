@@ -5,10 +5,14 @@
     margin-top: 2rem;
     font-family: $font-secondary;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-row: 6 / 7;
+    }
+
     &__list {
         display: grid;
         grid-template-rows: 10rem;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-gap: 2rem;
         list-style: none;
     }

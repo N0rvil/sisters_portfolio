@@ -11,6 +11,18 @@
         outline: none;
         cursor: pointer;
         transition: all .2s;
+
+        
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 25rem;
+        }
+
+        
 }
 
 .btn-primary:hover {
@@ -18,7 +30,7 @@
 }
 
 .btn-secondary {
-    height: 5rem;
+        height: 5rem;
         width: 25rem;
         background-color: $color-primary;
         color: $color-secondary;
@@ -30,6 +42,7 @@
         outline: none;
         cursor: pointer;
         transition: all .2s;
+        
 }
 
 .btn-card {

@@ -20,6 +20,11 @@ $font-primary: 'Dancing Script', cursive;
 $font-secondary: 'Grandstander', cursive;
 $font-tertiary: 'Times New Roman', Times, serif;
 
+$bp-largest: 87.5em; //1400px 1400/16 = 87.5em
+$bp-large: 68.75em; // 1100px 1100/16 = 68.75em
+$bp-medium: 56.25em; //900px 900/16 = 56.25em
+$bp-small: 31.25em; //500px 500/16 = 31.25em
+$bp-smallest: 21.875em; //350px 350/16 = 21.875em
 
 
 *, *::before, *::after {
@@ -32,6 +37,15 @@ $font-tertiary: 'Times New Roman', Times, serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
 }
 
 body {
@@ -44,6 +58,20 @@ body {
 .container {
     display: grid;
     grid-template-rows: minmax(min-content, 5rem) 90vh 2vh max-content 10rem;
-    grid-template-columns: [left-space-start] calc((100vw - 92vw) / 2) [left-space-end full-start] 45vw [full-center full-center-start] 45vw [full-end right-space-start] calc((100vw - 92vw) / 2) [right-space-end];
+    grid-template-columns: [left-space-start] 1fr [left-space-end full-start] 45vw [full-center full-center-start] 45vw [full-end right-space-start] 1fr [right-space-end];
+
+
+    
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: minmax(min-content, 5rem) 60vh 90vh 5vh max-content min-content;  
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: minmax(min-content, 5rem) 60vh 55vh 5vh max-content min-content;
+    }
+    
+
+    
 }
 
