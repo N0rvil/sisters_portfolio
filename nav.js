@@ -18,7 +18,9 @@ const resizing = () => {
     if (window.innerWidth > value) {
         list.style.display = "grid";
         nav.style.height = "5rem";
-    } 
+    } else {
+        list.style.display = "none";
+    }
     
 }
 
