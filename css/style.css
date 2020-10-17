@@ -325,6 +325,9 @@ body {
     .composition {
       margin-top: 8rem;
       height: 50rem; } }
+  @media only screen and (max-height: 25em) {
+    .composition {
+      display: none; } }
   .composition__box {
     margin-top: 5rem;
     margin-left: 5rem;
