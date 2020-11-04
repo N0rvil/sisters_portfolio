@@ -182,11 +182,17 @@ body {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-column-gap: 6rem;
   grid-row-gap: 6rem;
   background-color: #D6AF8C;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); }
+  @media only screen and (min-width: 125em) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr)); } }
+  @media only screen and (min-width: 187.5em) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr)); } }
   @media only screen and (max-width: 56.25em) {
     .gallery {
       grid-row: 5 / 6;
